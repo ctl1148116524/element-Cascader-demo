@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "vite/client",
+      "element-plus/global",
+      "pinia-plugin-persist"
+    ]
+    // "noImplicitAny": false, //在表达式和声明上有隐含的any类型时报错*         
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "./components.d.ts",
+    "./auto-imports.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.js"
+  ],
+}
